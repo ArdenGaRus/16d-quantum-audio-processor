@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 260px; font-family: Arial, sans-serif; padding: 15px; background: #0d0d11; color: #fff; text-align: center; }
+    h3 { margin-top: 0; color: #00ffcc; text-shadow: 0 0 10px rgba(0,255,204,0.3); }
+    .btn-group { display: flex; gap: 8px; margin: 8px 0; }
+    button { flex: 1; padding: 10px 5px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+    #startBtn { background: linear-gradient(135deg, #00ffcc, #00ccff); color: #000; box-shadow: 0 4px 12px rgba(0,255,204,0.15); }
+    #pauseBtn { background: #ffcc00; color: #000; }
+    #stopBtn { background: #ff3344; color: #fff; }
+    button:hover:not(:disabled) { opacity: 0.85; }
+    button:disabled { background: #222 !important; color: #555 !important; box-shadow: none !important; cursor: not-allowed; }
+    select { width: 100%; padding: 8px; background: #16161f; color: #fff; border: 1px solid #2d2d3d; border-radius: 5px; margin-bottom: 12px; }
+    .control-group { text-align: left; margin-top: 10px; font-size: 13px; }
+    input[type=range] { width: 100%; accent-color: #00ffcc; margin-top: 5px; }
+    canvas { width: 100%; height: 140px; background: #050508; border: 1px solid #1a1a26; border-radius: 6px; margin-top: 10px; }
+    .status { font-size: 11px; color: #666; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h3>16D КВАНТ-ПРОЦЕССОР 7.0</h3>
+  <div class="btn-group">
+    <button id="startBtn">СТАРТ</button>
+    <button id="pauseBtn" disabled>ПАУЗА</button>
+    <button id="stopBtn" disabled>СТОП</button>
+  </div>
+  <canvas id="orbitVisualizer" width="260" height="140"></canvas>
+  <div class="control-group">
+    <label for="mode">Геометрия поля:</label>
+    <select id="mode">
+      <option value="8d">8D Эллипс (Мягкий облет)</option>
+      <option value="16d">16D Гипер-Лемниската (Сквозной пролет)</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="genre">Акустика помещения:</label>
+    <select id="genre">
+      <option value="club">Арена / Клуб (Плотный кач)</option>
+      <option value="rock">Концертный зал (Драйв без каши)</option>
+      <option value="ambient">Глубокий космос (Бесконечное эхо)</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="distance">Масштаб сцены (Радиус): <span id="distVal">5.0</span>м</label>
+    <input type="range" id="distance" min="0.1" max="15.0" step="0.1" value="5.0">
+  </div>
+  <div class="control-group">
+    <label for="period">Время одного оборота: <span id="periodVal">16.0</span> сек</label>
+    <input type="range" id="period" min="2" max="40" step="0.1" value="16.0">
+  </div>
+  <div class="status">Фоновый движок через невидимый Offscreen Document</div>
+  <script src="popup.js"></script>
+</body>
+</html>

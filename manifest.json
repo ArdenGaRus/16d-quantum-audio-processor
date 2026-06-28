@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "16D КВАНТ-ПРОЦЕССОР 7.0",
+  "version": "7.0",
+  "description": "Эффект 16D работает в фоне через вчерашнюю Offscreen схему",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "tabs",
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Ctrl+Shift+1" },
+      "description": "Открыть окно расширения"
+    },
+    "toggle-mode": {
+      "suggested_key": { "default": "Ctrl+Shift+2" },
+      "description": "Переключить режим 8D / 16D"
+    },
+    "toggle-pause": {
+      "suggested_key": { "default": "Ctrl+Shift+3" },
+      "description": "Пауза / Старт эффекта"
+    }
+  }
+}
