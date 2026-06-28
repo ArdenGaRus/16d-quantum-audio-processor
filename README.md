@@ -7,6 +7,11 @@ A professional 16D spatial audio processor implemented as a Google Chrome Extens
 ## 🪐 Key Features
 
 * **Sub-Proximity Stage Control**: Adjust the sound field radius from **0.1 meters** (intimate headphone whisper) up to 15 meters deep field.
+
+<img width="378" height="746" alt="one" src="https://github.com/user-attachments/assets/410638e0-e0db-4c4f-a8e9-595440a71b05" />
+
+<img width="378" height="746" alt="two" src="https://github.com/user-attachments/assets/fae0c810-859c-4216-926c-83a164809154" />
+
 * **Ultra-Precise Inertia Timing**: Cycle period adjustable by **0.1-second increments** for perfect rhythm synchronization.
 * **Non-Linear Physics Engine**: Sound doesn't just rotate; it mimics gravity and inertia with phase shifts, organic Doppler effects, and dynamic "hang/rush" orbital patterns.
 * **Binaural Cross-Echo Room Simulation**: Implements asymmetrical cross-channel delays for Arena, Rock Concert, and Ambient Space acoustics.
