@@ -1,3 +1,7 @@
+![Manifest V3](https://shields.io)
+![Web Audio API](https://shields.io)
+![License MIT](https://shields.io)
+
 # 16D Quantum Audio Processor (Chrome Extension Manifest V3)
 
 A professional 16D spatial audio processor implemented as a Google Chrome Extension using the modern **Manifest V3** and **Offscreen Document API**. It captures live audio from any Chrome tab (like YouTube or VK) and transforms it into an immersive, multi-dimensional 3D/8D/16D soundscape using physical inertia and psychoacoustic panning.
